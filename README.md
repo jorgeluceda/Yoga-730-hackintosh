@@ -4,20 +4,24 @@ This Clover config work for Lenovo Yoga 730-13IKB
 
 ## Credits
 
-Clover config based on the files of @Rehabman: https://github.com/RehabMan/OS-X-Clover-Laptop-Config
+* [Clover EFI](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/) Boot
+* Config based on the files of [@Rehabman](https://github.com/RehabMan/OS-X-Clover-Laptop-Config)
+* [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
 
-## What's not working
+## What is not working
 
 * Hibernation
 * USB Type-C hot plug
 * Active Pen
 * Intel WLan 8265-AC
 
-## Working
+## What is Working
 
-* Intel Graphic UHD620 inject `0x591b0000` to `ig-platform-id`, [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases)
-* Realtek ALC236 inject Layout-id `15` [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)
-* TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases). 
+* Intel Graphic UHD620 inject `0x591b0000` to `ig-platform-id`, [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases/latest)
+* Realtek ALC236 inject Layout-id `15` [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
+* PS2 Keyboard  [VoodooPS2Controller.kext](https://github.com/alexandred/VoodooI2C/releases/latest)
+* TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases/latest). 
+* Battery and cpu sensor, [VirtualSMC.kext](https://github.com/alexandred/VirtualSMC/releases/latest). 
 * USB [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads)
 * Intel Blooth works when reboot from windows
 * SSD Trim by Clover patch 
