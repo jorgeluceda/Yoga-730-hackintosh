@@ -10,7 +10,6 @@ This Clover config work for Lenovo Yoga 730-13IKB
 
 ## What is not working
 
-* Hibernation
 * USB Type-C hot plug
 * Active Pen
 * Intel WLan 8265-AC
@@ -26,6 +25,7 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * Intel Blooth works when reboot from windows
 * SSD Trim by Clover patch 
 * Camera works fine
+* Hibernation and wake up
 
 ## BIOS setting before install
 
