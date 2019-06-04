@@ -20,7 +20,7 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * Realtek ALC236 inject Layout-id `15` [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
 * PS2 Keyboard  [VoodooPS2Controller.kext](https://github.com/alexandred/VoodooI2C/releases/latest)
 * TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases/latest). 
-* Battery and cpu sensor, [VirtualSMC.kext](https://github.com/alexandred/VirtualSMC/releases/latest). 
+* Battery and cpu sensor, [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest). 
 * USB [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads)
 * Intel Blooth works when reboot from windows
 * SSD Trim by Clover patch 
