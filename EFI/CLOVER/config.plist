@@ -179,6 +179,7 @@
 			<string>BOOTX64.EFI</string>
 			<string>Windows_OS</string>
 			<string>Preboot</string>
+			<string>Recovery</string>
 		</array>
 		<key>Language</key>
 		<string>zh-Hans:0</string>
@@ -190,6 +191,54 @@
 			<false/>
 			<key>Tool</key>
 			<false/>
+		</dict>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Hidden</key>
+					<false/>
+					<key>Title</key>
+					<string>Ubuntu</string>
+					<key>Arguments</key>
+					<string>initrd=/efi/Ubuntu/initrd boot=casper quiet splash iso-scan/filename=/ubuntu-19.04-desktop-amd64.iso locale=zh_CN</string>
+					<key>Path</key>
+					<string>\efi\Ubuntu\vmlinuz</string>
+					<key>Image</key>
+					<string>ubuntu</string>
+					<key>Type</key>
+					<string>Linux</string>
+				</dict>
+				<dict>
+					<key>Hidden</key>
+					<false/>
+					<key>Title</key>
+					<string>Deepin</string>
+					<key>Arguments</key>
+					<string>initrd=/efi/Deepin/initrd.lz boot=live union=overlay live-config quiet splash findiso=/deepin-15.10.1-amd64.iso locale=zh_CN</string>
+					<key>Path</key>
+					<string>\efi\Deepin\vmlinuz.efi</string>
+					<key>Image</key>
+					<string>deepin</string>
+					<key>Type</key>
+					<string>Linux</string>
+				</dict>
+				<dict>
+					<key>Hidden</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Phoenix OS</string>
+					<key>Arguments</key>
+					<string>initrd=/efi/Phoenix/initrd.img quiet root=/dev/ram0 androidboot.hardware=android_x86 SRC=/PhoenixOS vga=788</string>
+					<key>Path</key>
+					<string>\efi\Phoenix\kernel</string>
+					<key>Image</key>
+					<string>phoenix</string>
+					<key>Type</key>
+					<string>Linux</string>
+				</dict>
+			</array>
 		</dict>
 		<key>Theme</key>
 		<string>minimalism</string>
