@@ -10,9 +10,13 @@ This Clover config work for Lenovo Yoga 730-13IKB
 
 ## What is not working
 
-* USB Type-C hot plug
-* Active Pen
 * Intel WLan 8265-AC
+
+## What is half working
+
+* Intel Blooth works when reboot from windows
+* USB Type-C hot plug (broken sometime)
+* Active Pen works as mouse
 
 ## What is Working
 
@@ -22,7 +26,6 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases/latest). 
 * Battery and cpu sensor, [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest). 
 * USB [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads)
-* Intel Blooth works when reboot from windows
 * SSD Trim by Clover patch 
 * Camera works fine
 * Hibernation and wake up

@@ -91,6 +91,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>I2CA#1 SHUB _STA to XSTA</string>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>U0hVQg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Fn brightness keys, pair with SSDT-PS2K.aml</string>
 					<key>Comment</key>
 					<string>change _Q12 to XQ12</string>
@@ -145,6 +155,7 @@
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-PS2K.aml</string>
 			<string>SSDT-GPRW.aml</string>
+			<string>SSDT-SHUB.aml</string>
 			<string>SSDT-RMNE.aml</string>
 		</array>
 	</dict>
@@ -197,8 +208,8 @@
 			<key>Entries</key>
 			<array>
 				<dict>
-					<key>Hidden</key>
-					<false/>
+					<key>Disable</key>
+					<true/>
 					<key>Title</key>
 					<string>Ubuntu</string>
 					<key>Arguments</key>
@@ -211,8 +222,8 @@
 					<string>Linux</string>
 				</dict>
 				<dict>
-					<key>Hidden</key>
-					<false/>
+					<key>Disable</key>
+					<true/>
 					<key>Title</key>
 					<string>Deepin</string>
 					<key>Arguments</key>
