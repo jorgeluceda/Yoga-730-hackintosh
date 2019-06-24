@@ -156,7 +156,6 @@
 			<string>SSDT-PS2K.aml</string>
 			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-SHUB.aml</string>
-			<string>SSDT-RMNE.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -263,18 +262,11 @@
 		</dict>
 		<key>#ig-platform-id</key>
 		<string>0x591b0000</string>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
 		<true/>
-		<key>KernelLapic</key>
-		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KextsToPatch</key>
