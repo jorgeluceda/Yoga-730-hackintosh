@@ -169,7 +169,7 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
+		<key>#Audio</key>
 		<dict>
 			<key>Inject</key>
 			<integer>15</integer>
@@ -180,6 +180,36 @@
 			<true/>
 			<key>Inject</key>
 			<true/>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAWWQ==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
+				<key>enable-hdmi20</key>
+				<integer>1</integer>
+				<key>framebuffer-patch-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>#framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+			</dict>
+			<key>PciRoot(0)/Pci(0x1f,3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>15</integer>
+			</dict>
+			<key>PciRoot(0)/Pci(0x1c,0x05)/Pci(0,0)</key>
+			<dict>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+			</dict>
 		</dict>
 	</dict>
 	<key>GUI</key>
@@ -235,8 +265,6 @@
 					<string>Linux</string>
 				</dict>
 				<dict>
-					<key>Hidden</key>
-					<false/>
 					<key>FullTitle</key>
 					<string>Phoenix OS</string>
 					<key>Arguments</key>
@@ -258,10 +286,10 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>#ig-platform-id</key>
-		<string>0x591b0000</string>
+		<string>0x59160000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>

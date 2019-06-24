@@ -8,19 +8,14 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * Config based on the files of [@Rehabman](https://github.com/RehabMan/OS-X-Clover-Laptop-Config)
 * [Lilu.kext](https://github.com/acidanthera/Lilu/releases/latest)
 
-## What is not working
-
-* Intel WLan 8265-AC
-
 ## What is half working
 
-* Intel Blooth works when reboot from windows
 * USB Type-C hot plug (broken sometime)
 * Active Pen works as mouse
 
 ## What is Working
 
-* Intel Graphic UHD620 inject `0x591b0000` to `ig-platform-id`, [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases/latest)
+* Intel Graphic UHD620 inject `0x59160000` to `ig-platform-id`, [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases/latest)
 * Realtek ALC236 inject Layout-id `15` [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases/latest)
 * PS2 Keyboard  [VoodooPS2Controller.kext](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
 * TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases/latest). 
@@ -29,6 +24,8 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * SSD Trim by Clover patch 
 * Camera works fine
 * Hibernation and wake up
+* Wlan Replaced by DW1560 () [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
+* Bluetooth 4.0 [BrcmPatchRAM2.kext](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
 
 ## BIOS setting before install
 
