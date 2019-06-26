@@ -71,16 +71,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SBFI to SBFG</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>U0JGQlNCRkk=</data>
-					<key>Replace</key>
-					<data>U0JGQlNCRkc=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Fn brightness keys, pair with SSDT-PS2K.aml</string>
 					<key>Comment</key>
 					<string>change _Q11 to XQ11</string>
@@ -297,6 +287,10 @@
 		<true/>
 		<key>KernelPm</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
