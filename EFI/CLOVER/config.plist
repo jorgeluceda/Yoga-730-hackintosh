@@ -71,16 +71,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SBFI to SBFG</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>U0JGQlNCRkk=</data>
-					<key>Replace</key>
-					<data>U0JGQlNCRkc=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Fn brightness keys, pair with SSDT-PS2K.aml</string>
 					<key>Comment</key>
 					<string>change _Q11 to XQ11</string>
@@ -261,7 +251,7 @@
 			<true/>
 		</dict>
 		<key>#ig-platform-id</key>
-		<string>0x591b0000</string>
+		<string>0x59160000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -269,6 +259,10 @@
 		<true/>
 		<key>KernelPm</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
