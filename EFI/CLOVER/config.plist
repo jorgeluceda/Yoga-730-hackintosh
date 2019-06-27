@@ -181,14 +181,6 @@
 				<data>FlkAAA==</data>
 				<key>enable-hdmi20</key>
 				<integer>1</integer>
-				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>#framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
@@ -226,34 +218,6 @@
 		<dict>
 			<key>Entries</key>
 			<array>
-				<dict>
-					<key>Disable</key>
-					<true/>
-					<key>Title</key>
-					<string>Ubuntu</string>
-					<key>Arguments</key>
-					<string>initrd=/efi/Ubuntu/initrd boot=casper quiet splash iso-scan/filename=/ubuntu-19.04-desktop-amd64.iso locale=zh_CN</string>
-					<key>Path</key>
-					<string>\efi\Ubuntu\vmlinuz</string>
-					<key>Image</key>
-					<string>ubuntu</string>
-					<key>Type</key>
-					<string>Linux</string>
-				</dict>
-				<dict>
-					<key>Disable</key>
-					<true/>
-					<key>Title</key>
-					<string>Deepin</string>
-					<key>Arguments</key>
-					<string>initrd=/efi/Deepin/initrd.lz boot=live union=overlay live-config quiet splash findiso=/deepin-15.10.1-amd64.iso locale=zh_CN</string>
-					<key>Path</key>
-					<string>\efi\Deepin\vmlinuz.efi</string>
-					<key>Image</key>
-					<string>deepin</string>
-					<key>Type</key>
-					<string>Linux</string>
-				</dict>
 				<dict>
 					<key>FullTitle</key>
 					<string>Phoenix OS</string>

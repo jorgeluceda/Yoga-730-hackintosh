@@ -25,7 +25,7 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * Camera works fine
 * Hibernation and wake up
 * Wlan Replaced by DW1560/DW1820A [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* Bluetooth 4.0 [BrcmPatchRAM2.kext](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
+* Bluetooth 4.0 [BrcmBluetoothInjector.kext](https://github.com/RehabMan/os-x-brcmpatchram)
 
 ## BIOS setting before install
 
