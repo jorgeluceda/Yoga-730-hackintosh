@@ -193,7 +193,7 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>#Audio</key>
+		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
 			<integer>15</integer>
@@ -217,11 +217,6 @@
 			<dict>
 				<key>compatible</key>
 				<string>pci14e4,4353</string>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1f,3)</key>
-			<dict>
-				<key>layout-id</key>
-				<integer>15</integer>
 			</dict>
 		</dict>
 		<key>USB</key>
