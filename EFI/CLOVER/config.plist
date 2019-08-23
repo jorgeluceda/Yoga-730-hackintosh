@@ -18,8 +18,6 @@
 				<true/>
 				<key>FixHPET</key>
 				<true/>
-				<key>FixHeaders</key>
-				<true/>
 				<key>FixIPIC</key>
 				<true/>
 				<key>FixRegions</key>
@@ -30,6 +28,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					SERBUw==
@@ -42,6 +42,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change B0D4 to HDAU</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					QjBENA==
@@ -54,6 +56,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					SEVDSQ==
@@ -66,6 +70,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					R0ZYMA==
@@ -92,6 +98,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>I2CA#1 SHUB _STA to XSTA</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					X1NUQQ==
@@ -108,6 +116,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change _Q11 to XQ11</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					X1ExMQ==
@@ -120,6 +130,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change _Q12 to XQ12</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					X1ExMg==
@@ -132,6 +144,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					R1BSVwI=
@@ -160,6 +174,8 @@
 				<string>xh_rvp10</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -236,8 +252,12 @@
 				<dict>
 					<key>Arguments</key>
 					<string>initrd=/efi/Phoenix/initrd.img quiet root=/dev/ram0 androidboot.hardware=android_x86 SRC=/PhoenixOS</string>
+					<key>Disabled</key>
+					<false/>
 					<key>FullTitle</key>
 					<string>Phoenix OS</string>
+					<key>Ignore</key>
+					<false/>
 					<key>Image</key>
 					<string>phoenix</string>
 					<key>Path</key>
@@ -309,6 +329,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				igKEwHRE
@@ -323,6 +345,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				igKEwHRC
@@ -340,10 +364,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
@@ -354,6 +382,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				SU9LaXQ=
@@ -370,6 +400,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				SU9LaXQ=
@@ -388,7 +420,7 @@
 	<key>RtVariables</key>
 	<dict>
 		<key>CsrActiveConfig</key>
-		<string>0x13</string>
+		<string>0x67</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
